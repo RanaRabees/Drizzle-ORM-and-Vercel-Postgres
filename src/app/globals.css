@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    font-family: "Sora", sans-serif;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .copyright span {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 15px;
+    color: #212121;
+  }
+  
+  /*-------------------- FEATURES SECTION ------------------*/
+  .features-section {
+    margin-top: 4rem;
+  }
+  .features-section .title {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: linear-gradient(180deg, white 50%, #fbfcff 50%);
+    text-align: center;
+  }
+  .features-section .title h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 60px;
+    letter-spacing: 0.03em;
+    color: #212121;
+    width: 100%;
+  }
+  .features-section .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 8rem 4rem;
+    background-color: #fbfcff;
+  }
+  .features-section .content .left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .features-section .content .left .feature-background {
+    font-weight: 800;
+    font-size: 6.875rem;
+    line-height: 110px;
+    position: absolute;
+    color: #212121;
+    opacity: 0.07;
+    z-index: 1;
+  }
+  .features-section .content .left div {
+    width: 70%;
+    z-index: 2;
+  }
+  .features-section .content .left h3 {
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 1rem;
+  }
+  .features-section .content .left p {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: #212121;
+  }
+  .features-section .content .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .features-section .content .right div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .features-section .content .right p {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 26px;
+    text-align: justify;
+    color: #212121;
+  }
+  
+
+  @media screen and (max-width: 1210px) {
+    .features-section {
+      margin-top: 0;
+    }
+    .features-section .title {
+      justify-content: center;
+    }
+    .features-section .title h1 {
+      width: 100%;
+    }
+    .features-section .content {
+      grid-template-columns: 1fr;
+      grid-gap: 4rem;
+    }
+    .features-section .content .left {
+      grid-gap: 2rem;
+    }
+    .features-section .content .left div {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .features-section .title h1 {
+      width: 100%;
+    }
+    .features-section .content .left .feature-background {
+      font-size: 6rem;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .features-section {
+      padding: 0 2rem;
+    }
+    .features-section .title h1 {
+      font-size: 2.5rem;
+      width: 100%;
+      line-height: 40px;
+    }
+    .features-section .content .left .feature-background {
+      font-size: 3rem;
+    }
+    .features-section .content .right {
+      flex-direction: column;
+    }
+    .features-section .content {
+      padding: 0 0rem;
+    }
+  }
+  
